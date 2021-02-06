@@ -1,7 +1,15 @@
-<h3>Are you sure post?</h3>
-<%= form_with(model: @post, local: true) do |form| %>
-  <%= form.hidden_field :content %>
-  <p>Post:<%= @post.content %></p>
-  <%= form.submit %>
-  <%= form.submit "back", name: 'back' %>
-<% end %>
+<header>
+  <h1><a href="/posts">Postter</a></h1>
+</header>
+<div class="main">
+  <h3>Are you sure post?</h3>
+  <%= form_with(model: @post, local: true) do |form| %>
+    <%= form.hidden_field :content %>
+    <p>Post:<%= @post.content %></p>
+    <%= form.submit %>
+    <%= form.submit "back", name: 'back' %>
+  <% end %>
+</div>
+<footer>
+  <p>Copyright © 2021 WEF2101 Kajiyama Yuuki.</p>
+</footer>

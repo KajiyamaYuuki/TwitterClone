@@ -1,6 +1,12 @@
-<h1>Editing Post</h1>
-
-<%= render 'form', post: @post %>
-
-<%= link_to 'Show', @post %> |
-<%= link_to 'Back', posts_path %>
+<header>
+  <h1><a href="/posts">Postter</a></h1>
+</header>
+<div class="main">
+  <h1>Editing Post</h1>
+  <%= render 'form', post: @post %>
+  <%= link_to 'Show', @post %> |
+  <%= link_to 'Back', posts_path %>
+</div>
+<footer>
+  <p>Copyright © 2021 WEF2101 Kajiyama Yuuki.</p>
+</footer>
